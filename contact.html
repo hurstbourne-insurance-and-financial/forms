@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hurstbourne Insurance and Financial LLC for all your insurance and financial planning needs.">
+    <title>Contact Us - Hurstbourne Insurance and Financial LLC</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .hero {
+
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0 0 10px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info:hover, .contact-form:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info h3, .contact-form h3 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #31708e;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #265a6f;
+        }
+
+        #confirmationModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #confirmationModal h3 {
+            margin-bottom: 15px;
+        }
+
+        #confirmationModal button {
+            background-color: #31708e;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <nav>
+        <div class="logo">Hurstbourne Insurance and Financial LLC</div>
+        
+        <div>
+          <ul>
+    
+                   <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Insurance</a>
+                            <ul>
+                                <li><a href="life-insurance.html">Life Insurance</a></li>
+                                <li><a href="health-insurance.html">Health Insurance</a></li>
+                                <li>
+                                <a href="medicare.html">Medicare</a>
+                                <ul>
+                                    <li><a href="#">Medicare Advantage</a></li>
+                                    <li><a href="medigap.html">Medicare Supplement</a></li>
+                                    <li><a href="#">Medicare Information</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="disability.html">Disability</a></li>
+                                <li><a href="long-term-care.html">Long-Term Care</a></li>
+                                <li><a href="dental.html">Dental</a></li>
+                                <li><a href="vision.html">Vision</a></li>
+                                <li><a href="group.html">Business/Group</a></li>
+                            </ul>
+                        </li>
+                    <li>
+                        <a href="#">Hurstbourne Wealth Management LLC</a>
+                        <ul>
+                            <li><a href="investment.html">Investments</a></li>
+                            <li><a href="estate.html">Estate Planning</a></li>
+                            <li><a href="retirement.html">Retirement</a></li>
+                            <li><a href="education-savings-plans.html">Education Savings Plans</a></li>
+                            <li><a href="financial-plan.html">Comprehensive Financial Planning</a></li>
+                            <li><a href="advisor.html">Talk to a Financial Advisor</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+            
+          </ul>
+        </div>
+      </nav>     
+    </hr>
+    <section class="hero">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you! Reach out to us for inquiries or assistance.</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li><strong>Address:</strong> 10300 Linn Station Rd Ste 225</li>
+                <li><strong>Phone:</strong> <a href="tel:5025288040">502-528-8040</a></li>
+                <li><strong>Email:</strong> <a href="mailto:contact@hurstbournewealthmanagement.com">curren@lifeandhealth.us</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" action="https://formsubmit.co/contact@hurstbournewealthmanagement.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message (optional)"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>
+        <div class="footer-bottom">
+            <div class="disclosures">
+                <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                    <img src="icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#">
+                    <img src="icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="icons/twitter.svg" alt="Twitter">
+                </a>
+            </div>
+            <div class="important-links">
+                <a href="#">Business Continuity Plan</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Form ADV</a>
+                <a href="#">Form CRS</a>
+                <a href="#">Disclosures</a>
+
+            </div>
+        </div>
+    </footer>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <script src="scripts.js"></script> <!-- Link to the external JS file -->
+
+    <div id="overlay"></div>
+    <div id="confirmationModal">
+        <h3>Thank you for your message!</h3>
+        <p>A professional will reach out during business hours.</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+
+
+<footer>
+    <p>&copy; 2024 Hurstbourne Financial and Insurance LLC. All Rights Reserved. <a href="contacts.html">Contact Us</a> for more information.</p>
+    <div class="footer-bottom">
+        <div class="disclosures">
+            <p>Hurstbourne Insurance and Financial provides all insurance-related services. Hurstbourne Wealth Management, LLC is a state-registered investment advisor in the Commonwealth of Kentucky. The information on this site is for educational purposes only and does not constitute personalized investment, tax, or legal advice.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/curren-khadey" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="#">
+                <img src="icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="icons/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+        <div class="important-links">
+            <a href="#">Business Continuity Plan</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Form ADV</a>
+            <a href="#">Form CRS</a>
+            <a href="#">Disclosures</a>
+
+        </div>
+    </div>
+</footer>
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+<script src="scripts.js"></script> <!-- Link to the external JS file -->
+
+</body>
+</html>
